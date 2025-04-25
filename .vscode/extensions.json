@@ -1,0 +1,22 @@
+{
+  "recommendations": [
+    "bierner.markdown-preview-github-styles",
+    "bradlc.vscode-tailwindcss",
+    "codezombiech.gitignore",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "esbenp.prettier-vscode",
+    "foxundermoon.shell-format",
+    "github.copilot-chat",
+    "github.copilot",
+    "ms-vscode.vscode-typescript-next",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
+    "yzhang.markdown-all-in-one"
+  ],
+  "unwantedRecommendations": [
+    // "ms-python.black-formatter",
+    // "ms-python.isort",
+    // "ms-python.mypy-type-checker"
+  ]
+}

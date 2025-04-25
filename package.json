@@ -1,0 +1,44 @@
+{
+  "name": "@seyoungsong/hanjadict",
+  "version": "0.4.1",
+  "description": "A lightweight JavaScript library for looking up Korean Hanja characters with their 훈음 (Hun-eum) meanings and pronunciations",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "data"
+  ],
+  "homepage": "https://github.com/seyoungsong/hanjadict-js",
+  "bugs": {
+    "url": "https://github.com/seyoungsong/hanjadict-js/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "korean",
+    "hanja",
+    "dictionary",
+    "한자",
+    "huneum",
+    "훈음"
+  ],
+  "author": "Seyoung Song",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.2",
+    "eslint": "^8.57.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.8.3"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
