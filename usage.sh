@@ -10,3 +10,5 @@ npm run build
 npm test
 
 npm publish --access public
+
+python3 print.py

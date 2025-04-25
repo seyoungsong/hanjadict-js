@@ -1,8 +1,9 @@
 {
   "name": "@seyoungsong/hanjadict",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "A lightweight JavaScript library for looking up Korean Hanja characters with their 훈음 (Hun-eum) meanings and pronunciations",
   "main": "dist/index.js",
+  "browser": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",

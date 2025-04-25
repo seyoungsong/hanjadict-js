@@ -1,8 +1,19 @@
-import * as fs from "fs"
-import * as path from "path"
+// Import the data directly
+// This will be bundled at build time by tools like webpack, rollup, etc.
+import tableJson from "../data/table.json"
 
-// Load the table from the JSON file
-const dataPath = path.join(__dirname, "../data/table.json")
-export const tableData: Record<string, string> = JSON.parse(
-  fs.readFileSync(dataPath, "utf8"),
-)
+// For Node.js environments
+let tableData: Record<string, string>
+
+// Environment detection
+const isBrowser = typeof window !== "undefined"
+
+if (isBrowser) {
+  // Browser environment - use the imported JSON directly
+  tableData = tableJson
+} else {
+  // Node.js environment - can use the imported JSON directly as well
+  tableData = tableJson
+}
+
+export { tableData }
