@@ -5,7 +5,7 @@ npx tsc --init
 npm login
 
 # build and test
-npm run build
+rm -rf dist && npm run build
 # npm link
 npm test
 
